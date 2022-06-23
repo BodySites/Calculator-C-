@@ -13,26 +13,12 @@ namespace Calculator
     public partial class Form1 : Form
     {
  
-        private double operation(double argOne, double argTwo, object op)
+        public double operation(double argOne, double argTwo, object op)
         {
-            double resultOp = 0;
-            switch (((Button)op).Name)
-            {
-                case "button1":
-                    resultOp = argOne + argTwo;
-                    break;
-                case "button4":
-                    resultOp = argOne - argTwo;
-                    break;
-                case "button3":
-                    resultOp = argOne * argTwo;
-                    break;
-                case "button2":
-                    resultOp = argOne / argTwo;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            ITwoArgumentsCalculator calculator =
+            TwoArgumentsFactory.CreateCalculator(((Button)op).Name);
+            double resultOp = calculator.Calculate(argOne, argTwo);
+            
             return resultOp;
         }
         public Form1()
