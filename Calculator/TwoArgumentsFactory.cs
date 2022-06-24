@@ -20,6 +20,8 @@ namespace Calculator
                     return new MultiplyCalculator();
                 case "subtraction":
                     return new SubtractionCalculator();
+                case "exponentiation":
+                    return new ExponentiationCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }
