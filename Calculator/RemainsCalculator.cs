@@ -10,7 +10,7 @@ namespace Calculator
     {
         public double Calculate(double firstValue, double secondValue)
         {
-            return firstValue % secondValue;
+            return firstValue % secondValue;         
         }
     }
 }
