@@ -22,8 +22,10 @@ namespace Calculator
                     return new SubtractionCalculator();
                 case "exponentiation":
                     return new ExponentiationCalculator();
-                case " square":
+                case "square":
                     return new  SquareCalculator();
+                case "remains":
+                    return new  RemainsCalculator();                    
                 default:
                     throw new Exception("Неизвестная операция");
             }
