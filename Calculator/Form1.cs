@@ -1,5 +1,7 @@
-﻿using System;
+﻿using OneArgCalculator;
+using System;
 using System.Windows.Forms;
+using TwoArgCalculator;
 
 namespace Calculator
 {
@@ -10,10 +12,8 @@ namespace Calculator
         {
             error.Text = "";
             result.Text = "";
-            firstArg.Text = firstArg.Text.Replace('.', ',');
-            secondArg.Text = secondArg.Text.Replace('.', ',');
 
-            foreach(string argument in arguments)
+            foreach (string argument in arguments)
             {
                 if (!double.TryParse(argument, out double number))
                 {
@@ -56,6 +56,9 @@ namespace Calculator
 
         private void TwoArguments_Click(object sender, EventArgs e)
         {
+            firstArg.Text = firstArg.Text.Replace('.', ',');
+            secondArg.Text = secondArg.Text.Replace('.', ',');
+
             if (DataValidation(firstArg.Text, secondArg.Text))
             {
                 double numberOne = Convert.ToDouble(firstArg.Text);
@@ -68,7 +71,8 @@ namespace Calculator
 
         private void OneArgument_Click(object sender, EventArgs e)
         {
-            if(secondArg.Text != "") secondArg.Text = "";
+            if (secondArg.Text != "") secondArg.Text = "";
+            firstArg.Text = firstArg.Text.Replace('.', ',');
 
             if (DataValidation(firstArg.Text))
             {
