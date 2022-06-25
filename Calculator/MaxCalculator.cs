@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    internal class DivisionCalculator : ITwoArgumentsCalculator
+    internal class MaxCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {
-            return (secondValue != 0) ? firstValue / secondValue : -1;
+            return Math.Max(firstValue, secondValue);
         }
     }
 }

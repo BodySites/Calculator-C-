@@ -52,7 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IOneArgumentCalculator.cs" />
     <Compile Include="ITwoArgumentsCalculator.cs" />
+    <Compile Include="MaxCalculator.cs" />
+    <Compile Include="MinCalculator.cs" />
+    <Compile Include="OneArgumentFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdditionCalculator.cs" />

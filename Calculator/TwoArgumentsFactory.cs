@@ -20,6 +20,10 @@ namespace Calculator
                     return new MultiplyCalculator();
                 case "subtraction":
                     return new SubtractionCalculator();
+                case "searchMin":
+                    return new MinCalculator();
+                case "searchMax":
+                    return new MaxCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }
