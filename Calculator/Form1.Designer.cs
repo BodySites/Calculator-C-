@@ -34,9 +34,9 @@
             this.multiply = new System.Windows.Forms.Button();
             this.subtraction = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.module = new System.Windows.Forms.Button();
             this.searchMin = new System.Windows.Forms.Button();
             this.searchMax = new System.Windows.Forms.Button();
             this.secondArg = new System.Windows.Forms.TextBox();
@@ -54,7 +54,6 @@
             this.firstArg.Name = "firstArg";
             this.firstArg.Size = new System.Drawing.Size(173, 22);
             this.firstArg.TabIndex = 0;
-            this.firstArg.TextChanged += new System.EventHandler(this.FirstArg_TextChanged);
             // 
             // addition
             // 
@@ -110,38 +109,38 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "первый аргумент";
             // 
-            // button2
+            // sin
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(195, 153);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 38);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "sin(x)";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.OneArgument_Click);
+            this.sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sin.Location = new System.Drawing.Point(195, 153);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(93, 38);
+            this.sin.TabIndex = 12;
+            this.sin.Text = "sin(x)";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.OneArgument_Click);
             // 
-            // button3
+            // cos
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(317, 153);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 38);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "cos(x)";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.OneArgument_Click);
+            this.cos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cos.Location = new System.Drawing.Point(317, 153);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(93, 38);
+            this.cos.TabIndex = 13;
+            this.cos.Text = "cos(x)";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.OneArgument_Click);
             // 
-            // button4
+            // module
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(435, 153);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 38);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "|x|";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.OneArgument_Click);
+            this.module.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.module.Location = new System.Drawing.Point(435, 153);
+            this.module.Name = "module";
+            this.module.Size = new System.Drawing.Size(93, 38);
+            this.module.TabIndex = 14;
+            this.module.Text = "|x|";
+            this.module.UseVisualStyleBackColor = true;
+            this.module.Click += new System.EventHandler(this.OneArgument_Click);
             // 
             // searchMin
             // 
@@ -171,12 +170,14 @@
             this.secondArg.Name = "secondArg";
             this.secondArg.Size = new System.Drawing.Size(173, 22);
             this.secondArg.TabIndex = 17;
-            this.secondArg.TextChanged += new System.EventHandler(this.SecondArg_TextChanged);
             // 
             // result
             // 
+            this.result.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.result.ForeColor = System.Drawing.SystemColors.WindowText;
             this.result.Location = new System.Drawing.Point(491, 55);
             this.result.Name = "result";
+            this.result.ReadOnly = true;
             this.result.Size = new System.Drawing.Size(173, 22);
             this.result.TabIndex = 18;
             // 
@@ -242,9 +243,9 @@
             this.Controls.Add(this.secondArg);
             this.Controls.Add(this.searchMax);
             this.Controls.Add(this.searchMin);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.module);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.subtraction);
             this.Controls.Add(this.multiply);
@@ -267,9 +268,9 @@
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button subtraction;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button module;
         private System.Windows.Forms.Button searchMin;
         private System.Windows.Forms.Button searchMax;
         private System.Windows.Forms.TextBox secondArg;

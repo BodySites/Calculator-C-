@@ -8,19 +8,19 @@ namespace Calculator
 {
     internal class OneArgumentFactory
     {
-        /*public static IOneArgumentCalculator CreateCalculator(string CalculatorName)
+        public static IOneArgumentCalculator CreateCalculator(string CalculatorName)
         {
             switch (CalculatorName)
             {
                 case "module":
-                    return new MultiplyCalculator();
-                case "sinInDegrees":
-                    return new SubtractionCalculator();
-                case "cosInDegrees":
-                    return new SubtractionCalculator();
+                    return new ModuleCalculator();
+                case "sin":
+                    return new SinCalculator();
+                case "cos":
+                    return new CosCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }
-        }*/
+        }
     }
 }
