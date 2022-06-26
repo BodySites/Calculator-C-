@@ -1,0 +1,10 @@
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\bin\Debug\Calculator.exe
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\bin\Debug\Calculator.pdb
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator-Roman.csprojAssemblyReference.cache
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator-Roman.csproj.GenerateResource.cache
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator-Roman.csproj.CoreCompileInputs.cache
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator.exe
+C:\Users\рома\Desktop\Prog2022\Calculator-C--Calculator-C-Roman\Calculator\obj\Debug\Calculator.pdb
