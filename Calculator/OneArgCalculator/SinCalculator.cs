@@ -2,7 +2,7 @@
 
 namespace OneArgCalculator
 {
-    internal class SinCalculator : IOneArgumentCalculator
+    public class SinCalculator : IOneArgumentCalculator
     {
         public double Calculate(double value)
         {

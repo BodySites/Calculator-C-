@@ -2,7 +2,7 @@
 
 namespace TwoArgCalculator
 {
-    internal class MinCalculator : ITwoArgumentsCalculator
+    public class MinCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {

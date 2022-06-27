@@ -2,7 +2,7 @@
 
 namespace TwoArgCalculator
 {
-    internal class TwoArgumentsFactory
+    public class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string CalculatorName)
         {

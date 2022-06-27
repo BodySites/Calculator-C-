@@ -2,7 +2,7 @@
 
 namespace OneArgCalculator
 {
-    internal class CosCalculator : IOneArgumentCalculator
+    public class CosCalculator : IOneArgumentCalculator
     {
         public double Calculate(double value)
         {

@@ -2,7 +2,7 @@
 
 namespace OneArgCalculator
 {
-    internal class OneArgumentFactory
+    public class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string CalculatorName)
         {

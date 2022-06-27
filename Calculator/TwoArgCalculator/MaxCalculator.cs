@@ -2,7 +2,7 @@
 
 namespace TwoArgCalculator
 {
-    internal class MaxCalculator : ITwoArgumentsCalculator
+    public class MaxCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {
