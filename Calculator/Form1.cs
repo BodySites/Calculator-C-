@@ -5,6 +5,9 @@ using TwoArgCalculator;
 
 namespace Calculator
 {
+    /// <summary>
+    /// API приложения 
+    /// </summary>
     public partial class Form1 : Form
     {
 
@@ -28,30 +31,33 @@ namespace Calculator
         {
             double resultOp;
 
-            if (arguments.Length == 2)
+            try
             {
-                ITwoArgumentsCalculator calculatorTwoArg =
-                TwoArgumentsFactory.CreateCalculator(((Button)operationName).Name);
-                resultOp = calculatorTwoArg.Calculate(arguments[0], arguments[1]);
-            }
-            else
-            {
-                IOneArgumentCalculator calculatorOneArg =
-                OneArgumentFactory.CreateCalculator(((Button)operationName).Name);
-                resultOp = calculatorOneArg.Calculate(arguments[0]);
-            }
+                if (arguments.Length == 2)
+                {
+                    ITwoArgumentsCalculator calculatorTwoArg =
+                    TwoArgumentsFactory.CreateCalculator(((Button)operationName).Name);
+                    resultOp = calculatorTwoArg.Calculate(arguments[0], arguments[1]);
+                }
+                else
+                {
+                    IOneArgumentCalculator calculatorOneArg =
+                    OneArgumentFactory.CreateCalculator(((Button)operationName).Name);
+                    resultOp = calculatorOneArg.Calculate(arguments[0]);
+                }
 
-            return resultOp;
+                return resultOp;
+            }
+            catch (Exception ex)
+            {
+                error.Text = ex.Message;
+                return -1;
+            }
         }
 
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void TwoArguments_Click(object sender, EventArgs e)

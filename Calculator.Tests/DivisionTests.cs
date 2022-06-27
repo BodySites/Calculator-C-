@@ -18,5 +18,16 @@ namespace Calculator.Tests
 
             Assert.AreEqual(resultValue, actualResult);
         }
+
+        [TestMethod]
+        public void ExceptionTest()
+        {
+            double firstValue = 38.44;
+            double secondValue = 0;
+
+            DivisionCalculator calculator = new DivisionCalculator();
+
+            Assert.ThrowsException<Exception>(() => calculator.Calculate(firstValue, secondValue));
+        }
     }
 }
