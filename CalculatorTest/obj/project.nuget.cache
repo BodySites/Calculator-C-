@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vBcxv2qAQ5eSNVG7HwUrdtFETW0UDDNh45BPXF7ueiJcBUxqXKo+m+WkpUlcReNiK81747+9qRloRoUeiYATWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\рома\\Desktop\\Prog2022\\CalculatorTest\\CalculatorTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\рома\\.nuget\\packages\\mstest.testadapter\\2.1.1\\mstest.testadapter.2.1.1.nupkg.sha512",
+    "C:\\Users\\рома\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512",
+    "C:\\Users\\рома\\.nuget\\packages\\selenium.webdriver\\3.14.0\\selenium.webdriver.3.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
