@@ -1,6 +1,6 @@
 ﻿namespace TwoArgCalculator
 {
-    internal class AdditionCalculator : ITwoArgumentsCalculator
+    public class AdditionCalculator : ITwoArgumentsCalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {

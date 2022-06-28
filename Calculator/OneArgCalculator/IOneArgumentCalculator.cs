@@ -1,6 +1,6 @@
 ﻿namespace OneArgCalculator
 {
-    internal interface IOneArgumentCalculator
+    public interface IOneArgumentCalculator
     {
         double Calculate(double value);
     }

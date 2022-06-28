@@ -2,7 +2,7 @@
 
 namespace TwoArgCalculator
 {
-    internal class TwoArgumentsFactory
+    public class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string CalculatorName)
         {
@@ -16,10 +16,10 @@ namespace TwoArgCalculator
                     return new MultiplyCalculator();
                 case "subtraction":
                     return new SubtractionCalculator();
-                case "searchMin":
-                    return new MinCalculator();
-                case "searchMax":
-                    return new MaxCalculator();
+                case "step":
+                    return new StepCalculator();
+                case "degree":
+                    return new DegreeCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }
